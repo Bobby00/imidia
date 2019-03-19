@@ -48,14 +48,20 @@
     }
     .page-title h2,
     .header-text h2 {
-        font-size: 20px;
+        font-size: 32px;
     }
     .mainmenu-area .navbar-toggle {
         margin-top: 20px;
     }
     .mainmenu-area .navbar-toggle .icon-bar {
-        background-color: #ffffff;
+        background-color: #138fc2;
     }
+
+    .mainmenu-area.affix a {
+    color: #fff!important;
+    font-size: 17px;
+}
+
     .mainmenu-area #primary-menu {
         background-color: #138FC2;
     }
@@ -96,4 +102,6 @@
 
 /* Wide Mobile Layout: 480px. */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+   
+}

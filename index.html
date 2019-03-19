@@ -9,7 +9,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Home</title>
+    <title>Welcome to imidia</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font/flaticon.css">
 
     <!-- Main-Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -61,7 +63,7 @@
             <nav class="collapse navbar-collapse" id="primary-menu">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#home-page">HOME</a></li>
-                    <li><a href="#aboutus-page">ABOUT US</a></li>
+                    <!-- <li><a href="#aboutus-page">ABOUT US</a></li> -->
                     <li><a href="#service-page">SERVICES</a></li>
                     <li><a href="#feature-page">FEATURES</a></li>
                     <!-- <li><a href="#price-page">Pricing</a></li> -->
@@ -78,14 +80,16 @@
 
 
     <!--Header-area-->
-    <header class="header-area overlay full-height relative v-center" id="home-page">
+    <header class="header-area overlay full-height relative v-center" id="header">
+        <canvas class="canvas-styl hidden-sm" id="header-canvas">
+        </canvas>
         <div class="absolute anlge-bg"></div>
         <div class="container">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
                     <h2>We Build Professional and Creative Websites</h2>
                     <p>We Build Your <strong>Online Presence</strong> With Modern Website Designs.</p>
-                    <a href="#" class="button white fnt-25">See more  🡢</a>
+                    <a href="#service-page" class="button white fnt-20">FIND OUT MORE  🡢</a>
                 </div>
 
                 <div class="hidden-xs hidden-sm col-md-5 text-right">
@@ -110,23 +114,24 @@
             </div>
             <center>
 <section id="section10" class="demo">
-  <a href="#thanks"><span></span></a>
+  <a href="#service-page"><span></span></a>
 </section>
 </center>
         </div>
+        
     </header>
     <!--Header-area/-->
 
 
 
     <!--Feature-area-->
-    <section class="gray-bg section-padding" id="service-page">
+    <section class=" section-padding" id="service-page">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                     <div class="page-title">
-                        <h2>OUR SERVICES</h2>
-                        <p>We Offer The Following Web Services</p>
+                        <h2 class="primary-color heading">OUR SERVICES</h2>
+                        <!-- <p>We offer the following Web Services</p> -->
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -135,7 +140,7 @@
                             <img src="images/portfolio-icon-1.png" alt="">
                         </div>
                         <h4>CREATIVE DESIGNS</h4>
-                        <p>We offer creative web designs tailored to potray your online presence.</p>
+                        <p>We offer creative web designs that are user friendly & tailored to potray your online presence.</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -144,7 +149,7 @@
                             <img src="images/service-icon-2.png" alt="">
                         </div>
                         <h4>WEBSITE DEVELOPMENT</h4>
-                        <p>We develop websites and web apps with the latest technologies</p>
+                        <p>We develop websites and web apps with the latest technologies and functionalities</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -187,8 +192,8 @@
                                         </div> -->
                                     </div>
                                     <div class="col-xs-12 col-md-6">
-                                        <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="images/responsive-img.jpg" alt="">
+                                        <div data-animation="animated fadeInRight">
+                                            <i class="flaticon-025-responsive"></i>
                                         </div>
                                     </div>
                                     <!-- <div class="col-xs-6 col-md-3">
@@ -213,8 +218,8 @@
                                         </div> -->
                                     </div>
                                     <div class="col-xs-12 col-md-6">
-                                        <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="images/fastload-img.jpeg" alt="">
+                                        <div data-animation="animated fadeInRight">
+                                            <i class="flaticon-031-update"></i>
                                         </div>
                                     </div>
                                     <!-- <div class="col-xs-6 col-md-3">
@@ -238,8 +243,8 @@
                                         </div> -->
                                     </div>
                                     <div class="col-xs-12 col-md-6">
-                                        <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="images/analytics-img.png" alt="">
+                                        <div data-animation="animated fadeInRight">
+                                            <i class="flaticon-028-admin"></i>
                                         </div>
                                     </div>
                                     <!-- <div class="col-xs-6 col-md-3">
@@ -263,8 +268,8 @@
                                         </div> -->
                                     </div>
                                     <div class="col-xs-12 col-md-6">
-                                        <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="images/web-hosting.png" alt="">
+                                        <div data-animation="animated fadeInRight">
+                                            <i class="flaticon-002-browser"></i>
                                         </div>
                                     </div>
                                     <!-- <div class="col-xs-6 col-md-3">
@@ -278,16 +283,16 @@
                         <!-- Indicators -->
                         <ol class="carousel-indicators caption-indector">
                             <li data-target="#caption_slide" data-slide-to="0" class="active">
-                                <strong>Resposive Design </strong>UX friendly designs.
+                                <strong>Resposive Design </strong><span class="hidden-xs">UX friendly designs.</span>
                             </li>
                             <li data-target="#caption_slide" data-slide-to="1">
-                                <strong>Fast Load Time </strong>Web Optimization.
+                                <strong>Fast Load Time </strong><span class="hidden-xs">Web Optimization.</span>
                             </li>
                             <li data-target="#caption_slide" data-slide-to="2">
-                                <strong>Website Statistics </strong>Web analytics & Traffic.
+                                <strong>Website Statistics </strong><span class="hidden-xs">Web analytics & Traffic.</span>
                             </li>
                             <li data-target="#caption_slide" data-slide-to="3">
-                                <strong>Domain & Web Hosting </strong>Domain purchasing & Hosting Providers.
+                                <strong>Domain & Web Hosting </strong><span class="hidden-xs">Domain & Hosting Services.</span>
                             </li>
                         </ol>
                     </div>
@@ -298,13 +303,13 @@
 
 
 
-    <section class="gray-bg section-padding" id="feature-page">
+    <section class=" section-padding" id="feature-page">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                     <div class="page-title">
-                        <h2>SPECIAL FEATURES</h2>
-                        <p>We Offer a variety of Special Features That Are Implimented In The Websites We Build Including ...</p>
+                        <h2 class="primary-color heading">SPECIAL FEATURES</h2>
+                        <!-- <p>We offer a variety of special features that are implimented in the websites we build including ...</p> -->
                     </div>
                 </div>
             </div>
@@ -514,66 +519,7 @@
 
 
 
-    <section class="testimonial-area section-padding gray-bg overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Our Clients' Feedback</h2>
-                        <p>Comments from satisfied clients we work with</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <div class="testimonials">
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-1.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-2.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-3.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-4.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-5.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-6.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
 
 
@@ -761,41 +707,19 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
-                            <h2>Talk to us</h2>
+                            <h2 class="heading">Talk to us</h2>
                             <p>We Reply Within Minutes</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <address class="side-icon-boxes">
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/location-arrow.png" alt="">
-                                </div>
-                                <p><strong>Address: </strong> Box 564, Nairobi <br />KENYA</p>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="switchable__text">
+                                <h2>Need a new website?<br class="hidden-xs hidden-sm"> or a redesign of your website?</h2>
+                                <p class="lead fnt-w8-300"> Reach us today through this form and we will personally contact you to start our journey of building or upgrading your online brand. </p>
                             </div>
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/phone-arrow.png" alt="">
-                                </div>
-                                <p><strong>Telephone: </strong>
-                                    <a href="callto:8801812726495">+254 7** *** ***</a> <br />
-                                    <a href="callto:8801687420471">+254 7** *** ***</a>
-                                </p>
-                            </div>
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/mail-arrow.png" alt="">
-                                </div>
-                                <p><strong>E-mail: </strong>
-                                    <a href="mailto:youremail@example.com">imidia@example.com</a> <br />
-                                    <a href="mailto:youremail@example.com">imidia@mail.com</a>
-                                </p>
-                            </div>
-                        </address>
                     </div>
-                    <div class="col-xs-12 col-md-8">
+                    <div class="col-xs-12 col-md-6">
                         <form action="process.php" id="contact-form" method="post" class="contact-form">
                             <div class="form-double">
                                 <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
@@ -812,7 +736,7 @@
         <div class="footer-middle">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 pull-right">
+                    <!-- <div class="col-xs-12 col-sm-6 pull-right">
                         <ul class="social-menu text-right x-left">
                             <li><a href="#"><i class="ti-facebook"></i></a></li>
                             <li><a href="#"><i class="ti-twitter"></i></a></li>
@@ -820,7 +744,7 @@
                             <li><a href="#"><i class="ti-linkedin"></i></a></li>
                             <li><a href="#"><i class="ti-github"></i></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="col-xs-12 col-sm-6">
                         <p>.</p>
                     </div>
@@ -830,6 +754,26 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
+                    <center>
+                        <a href="#" class="logo">
+                            <h1 style="color: #fff; font-size: 40px;" class="text-center">imidia</h1>
+                        </a>
+
+                        <a style="color: #fff; font-size: 14px;" href="mailto:info@imidia.co.ke">info@imidia.co.ke</a>
+
+                        <br><br>
+
+                        <div class="col-xs-12 col-sm-12">
+                            <ul class="social-menu text-center">
+                                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                <li><a href="#"><i class="ti-twitter"></i></a></li>
+                                <li><a href="#"><i class="ti-google"></i></a></li>
+                                <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                                <li><a href="#"><i class="ti-github"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </center>
                     <div class="col-xs-12 text-center">
                         <p>&copy; Copyright 2018 All right reserved.</p>
                     </div>
@@ -853,7 +797,9 @@
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
+    <script src="js/index.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

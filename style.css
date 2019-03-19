@@ -91,6 +91,19 @@ input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
+
+.mainmenu-area.affix h2 {
+    color: #138fc2;
+}
+
+
+.mainmenu-area.affix a {
+    color: #138fc2;
+    font-size: 17px;
+}
+
+
+
 /**
 *Helper-Classes
 **/
@@ -207,7 +220,7 @@ input:-webkit-autofill:focus {
 }
 
 .button.white:hover {
-    background-color: #2f60c3;
+    background-color: #138fc2;
     color: #ffffff;
 }
 
@@ -324,6 +337,7 @@ input:-webkit-autofill:focus {
     background: none;
     padding: 30px 15px;
     position: relative;
+    font-size: 17px;
     border-top: 3px solid transparent;
     text-align: center;
 }
@@ -347,7 +361,7 @@ input:-webkit-autofill:focus {
 
 .mainmenu-area #primary-menu > ul > li > a:hover:before,
 .mainmenu-area #primary-menu > ul > li.active > a:before {
-    opacity: 1;
+    opacity: 0;
     top: 0;
 }
 
@@ -355,6 +369,13 @@ input:-webkit-autofill:focus {
 .mainmenu-area #primary-menu ul li a:hover {
     border-top: 3px solid #ffffff;
 }
+
+
+.mainmenu-area.affix #primary-menu ul li.active a,
+.mainmenu-area.affix #primary-menu ul li a:hover {
+    border-top: 3px solid #138fc2;
+}
+
 
 .mainmenu-area.affix {
     /*#138fc2*/
@@ -459,7 +480,7 @@ input:-webkit-autofill:focus {
 .caption-slider .carousel-indicators li {
     float: left;
     padding-top: 20px;
-    padding-right: 30px;
+    padding-right: 20px;
     cursor: pointer;
     position: relative;
     list-style: none;
@@ -986,6 +1007,11 @@ preloader
 
 /*CUSTOM STYLES*/
 
+.canvas-styl {
+    position: absolute; 
+    width: 100%;
+}
+
 .fnt-25 {
     font-size: 25px;
 }
@@ -1005,6 +1031,14 @@ preloader
     cursor: pointer;
     
 }
+.heading {
+    font-size: 40px;
+    font-weight: 200;   
+}
+
+.primary-color {
+    color: #138fc2!important;
+}
 
 #section10 a {
   padding-top: 60px;
@@ -1013,8 +1047,8 @@ preloader
   position: absolute;
   bottom: 15%;
   left: 50%;
-  width: 30px;
-  height: 50px;
+  width: 40px;
+  height: 60px;
   margin-left: -15px;
   border: 3px solid #fff;
   border-radius: 50px;
@@ -1066,3 +1100,4 @@ preloader
     opacity: 0;
   }
 }
+
