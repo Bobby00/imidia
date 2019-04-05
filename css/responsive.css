@@ -32,6 +32,10 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
+    .header-phone {
+      font-size: 35px;
+      padding-bottom: 40px;
+    }
 }
 
 
@@ -57,7 +61,7 @@
         background-color: #138fc2;
     }
 
-    .mainmenu-area.affix a {
+    .mainmenu-area.affix li a {
     color: #fff!important;
     font-size: 17px;
 }
@@ -103,5 +107,8 @@
 /* Wide Mobile Layout: 480px. */
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
-   
+ .header-phone {
+   font-size: 20px;
+   padding-bottom: 40px;
+ }
 }

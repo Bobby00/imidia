@@ -97,7 +97,7 @@ input:-webkit-autofill:focus {
 }
 
 
-.mainmenu-area.affix a {
+.mainmenu-area.affix li a {
     color: #138fc2;
     font-size: 17px;
 }
@@ -337,7 +337,7 @@ input:-webkit-autofill:focus {
     background: none;
     padding: 30px 15px;
     position: relative;
-    font-size: 17px;
+    font-size: 20px;
     border-top: 3px solid transparent;
     text-align: center;
 }
@@ -414,11 +414,12 @@ input:-webkit-autofill:focus {
 
 .header-text h2 {
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .header-text .button {
     margin-top: 30px;
+    font-weight: 600;
 }
 
 .screen-slider .item {
@@ -1006,9 +1007,11 @@ preloader
 }
 
 /*CUSTOM STYLES*/
-
+.header-text_helper {
+  font-size: 19px;
+}
 .canvas-styl {
-    position: absolute; 
+    position: absolute;
     width: 100%;
 }
 
@@ -1016,7 +1019,7 @@ preloader
     font-size: 25px;
 }
 .fnt-20 {
-    font-size: 20px;
+    font-size: 25px;
 }
 .fnt-50 {
     font-size: 50px;
@@ -1029,23 +1032,64 @@ preloader
     color: #286090;
     padding-top: 15px;
     cursor: pointer;
-    
+
 }
 .heading {
     font-size: 40px;
-    font-weight: 200;   
+    font-weight: 200;
 }
 
 .primary-color {
     color: #138fc2!important;
 }
 
+.services_heading {
+  font-size: 23px;
+  color: #138fc2;
+}
+.cta-01 {
+  font-style: italic;
+  color: #138fc2;
+  font-weight: 600;
+  text-decoration: underline;
+}
+::placeholder {
+  font-size: 16px;
+}
+.form_styling {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+}
+.contact-header_text {
+  font-size: 40px;
+  font-weight: 100;
+}
+.contact-btn_styl {
+  width: 100%;
+  background-color: #307BB7;
+  font-weight: 500;
+  font-size: 20px;
+}
+.sticky-top {
+    background-color: #138fc2;
+    color: white;
+}
+.sticky-top i a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.color-white {
+  color: #fff!important;
+}
+
+
 #section10 a {
   padding-top: 60px;
 }
 #section10 a span {
   position: absolute;
-  bottom: 15%;
+  bottom: 5%;
   left: 50%;
   width: 40px;
   height: 60px;
@@ -1100,4 +1144,3 @@ preloader
     opacity: 0;
   }
 }
-
